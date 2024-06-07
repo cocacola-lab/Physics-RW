@@ -1,4 +1,4 @@
 <div align="center">
-    <h1> MineLand </h1>
-    <h4> Simulating Large-Scale Multi-Agent Interactions with Limited Multimodal Senses and Physical Needs </h4>
+    <h1> Physics-G </h1>
+    <h5> Bridging the Reality Gap: A Benchmark for Physical Reasoning in General World Models with Various Physical Phenomena beyond Mechanics </h4>
 </div>
