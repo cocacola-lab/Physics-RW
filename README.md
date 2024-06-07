@@ -1,2 +1,4 @@
-# Physics-RW
-Bridging the Reality Gap: A Benchmark for Physical Reasoning in General World Models with Various Physical Phenomena beyond Mechanics
+<div align="center">
+    <h1> MineLand </h1>
+    <h4> Simulating Large-Scale Multi-Agent Interactions with Limited Multimodal Senses and Physical Needs </h4>
+</div>
