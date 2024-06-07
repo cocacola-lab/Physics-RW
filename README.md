@@ -8,7 +8,7 @@ Physics-RW benchmark is a physical reasoning dataset constructed from real-world
 - [0. Contents](#0-contents)
 - [1. The Organized Structure of Dataset](#1-the-organized-structure-of-dataset)
 - [2. Download Dataset](#2-download-dataset)
-- [3. Benchmark Evaluate](#3-benchmark-evaluate)
+- [3. Benchmark Evaluation](#3-benchmark-evaluate)
 
 ## 1. The Organized Structure of Dataset <a id="1-the-organized-structure-of-dataset"></a>
 The dataset is organized as follows.
@@ -51,6 +51,26 @@ ds =  MsDataset.load('pengyz/Physics-RW')
 ```
 git clone https://www.modelscope.cn/datasets/pengyz/Physics-RW.git
 ```
-## 3. Benchmark Evaluate <a id="benchmark-evaluate"></a>
+## 3. Benchmark Evaluation <a id="benchmark-evaluate"></a>
 We primarily evaluate existing methods based on accuracy (ACC), F1 score, and Fréchet Video Distance (FVD) metrics. Considering the large size of content files in video generation tasks, we provide subsequent videos for evaluation. However, for classification task types, we do not provide ground truth. Users are required to store the model-generated content in the "prediction" field of JSON files and then submit the results following the dataset structure (excluding video files). We will conduct evaluations promptly and return the assessment results. In the future, we plan to establish an evaluation website to showcase both evaluated model results and the results provided by users.
+## 4. Baseline Models
+We have evaluated the representative models, and the code is available at the following link:
+| Model Name | Paper or Project | Code Link | License |
+| ---------- | ------------ | ---------- | ----------|
+| LLaMA-Adapter | [LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention](https://arxiv.org/pdf/2303.16199) | [code](https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/imagebind_LLM) |
+| Large World Model | [World Model on Million-Length Video and Language with Blockwise RingAttention](https://arxiv.org/abs/2402.08268)| [code](https://github.com/LargeWorldModel/LWM) |
+| VideoChat | [VideoChat : Chat-Centric Video Understanding](https://arxiv.org/abs/2305.06355) | [code](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat) |
+| VideoChat2 | [MVBench: A Comprehensive Multi-modal Video Understanding Benchmark](https://arxiv.org/abs/2311.17005)| [code](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2) |
+| Video-LLaMA | [Video-LLaMA: An Instruction-tuned Audio-Visual Language Model for Video Understanding](https://arxiv.org/abs/2306.02858) | [code](https://github.com/DAMO-NLP-SG/Video-LLaMA) |
+| Video-ChatGPT | [Video-ChatGPT: Towards Detailed Video Understanding via Large Vision and Language Models](https://arxiv.org/abs/2306.05424) | [code](https://github.com/mbzuai-oryx/Video-ChatGPT) |
+| Video-LLaVA | [Video-LLaVA: Learning United Visual Representation by Alignment Before Projection](https://arxiv.org/abs/2311.10122) | [code](https://github.com/PKU-YuanGroup/Video-LLaVA) |
+| MiniGPT4-Video | [MiniGPT4-Video: Advancing Multimodal LLMs for Video Understanding with Interleaved Visual-Textual Tokens](https://arxiv.org/abs/2404.03413) | [code](https://github.com/Vision-CAIR/MiniGPT4-video) | 
+| Gemini 1.5 Pro | [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](https://arxiv.org/pdf/2403.05530) | [code](https://github.com/google-gemini/cookbook/blob/main/quickstarts/Video.ipynb) | Apache License 2.0|
+| GPT-4o | [GPT-4o](https://openai.com/index/hello-gpt-4o/) | [code](https://github.com/openai/openai-cookbook/blob/main/examples/gpt4o/introduction_to_gpt4o.ipynb) | MIT License |
+| NExT-GPT | [NExT-GPT: Any-to-Any Multimodal LLM](https://arxiv.org/abs/2309.05519) | [code](https://github.com/NExT-GPT/NExT-GPT) | BSD 3-Clause License |
+| Open-Sora | -------------- | [code](https://github.com/hpcaitech/Open-Sora) | Apache License 2.0 |
+
+
+## 5. Contact Us
+If you have any questions, please feel free to contact us via email at pengyuzhao@bjtu.edu.cn or zhaopengyuh@163.com. (Note: For classification task submissions, please send an email to the above addresses for now. We will set up a website for submissions in the future.)
 
