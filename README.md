@@ -57,14 +57,14 @@ We primarily evaluate existing methods based on accuracy (ACC), F1 score, and Fr
 We have evaluated the representative models, and the code is available at the following link:
 | Model Name | Paper or Project | Code Link | License |
 | ---------- | ------------ | ---------- | ----------|
-| LLaMA-Adapter | [LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention](https://arxiv.org/pdf/2303.16199) | [code](https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/imagebind_LLM) |
-| Large World Model | [World Model on Million-Length Video and Language with Blockwise RingAttention](https://arxiv.org/abs/2402.08268)| [code](https://github.com/LargeWorldModel/LWM) |
-| VideoChat | [VideoChat : Chat-Centric Video Understanding](https://arxiv.org/abs/2305.06355) | [code](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat) |
-| VideoChat2 | [MVBench: A Comprehensive Multi-modal Video Understanding Benchmark](https://arxiv.org/abs/2311.17005)| [code](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2) |
-| Video-LLaMA | [Video-LLaMA: An Instruction-tuned Audio-Visual Language Model for Video Understanding](https://arxiv.org/abs/2306.02858) | [code](https://github.com/DAMO-NLP-SG/Video-LLaMA) |
-| Video-ChatGPT | [Video-ChatGPT: Towards Detailed Video Understanding via Large Vision and Language Models](https://arxiv.org/abs/2306.05424) | [code](https://github.com/mbzuai-oryx/Video-ChatGPT) |
-| Video-LLaVA | [Video-LLaVA: Learning United Visual Representation by Alignment Before Projection](https://arxiv.org/abs/2311.10122) | [code](https://github.com/PKU-YuanGroup/Video-LLaVA) |
-| MiniGPT4-Video | [MiniGPT4-Video: Advancing Multimodal LLMs for Video Understanding with Interleaved Visual-Textual Tokens](https://arxiv.org/abs/2404.03413) | [code](https://github.com/Vision-CAIR/MiniGPT4-video) | 
+| LLaMA-Adapter | [LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention](https://arxiv.org/pdf/2303.16199) | [code](https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/imagebind_LLM) |GNU GENERAL PUBLIC LICENSE|
+| Large World Model | [World Model on Million-Length Video and Language with Blockwise RingAttention](https://arxiv.org/abs/2402.08268)| [code](https://github.com/LargeWorldModel/LWM) |Apache License 2.0|
+| VideoChat | [VideoChat : Chat-Centric Video Understanding](https://arxiv.org/abs/2305.06355) | [code](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat) |MIT License|
+| VideoChat2 | [MVBench: A Comprehensive Multi-modal Video Understanding Benchmark](https://arxiv.org/abs/2311.17005)| [code](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2) |MIT License|
+| Video-LLaMA | [Video-LLaMA: An Instruction-tuned Audio-Visual Language Model for Video Understanding](https://arxiv.org/abs/2306.02858) | [code](https://github.com/DAMO-NLP-SG/Video-LLaMA) |BSD 3-Clause License|
+| Video-ChatGPT | [Video-ChatGPT: Towards Detailed Video Understanding via Large Vision and Language Models](https://arxiv.org/abs/2306.05424) | [code](https://github.com/mbzuai-oryx/Video-ChatGPT) | CC-BY-4.0 License|
+| Video-LLaVA | [Video-LLaVA: Learning United Visual Representation by Alignment Before Projection](https://arxiv.org/abs/2311.10122) | [code](https://github.com/PKU-YuanGroup/Video-LLaVA) | Apache License 2.0|
+| MiniGPT4-Video | [MiniGPT4-Video: Advancing Multimodal LLMs for Video Understanding with Interleaved Visual-Textual Tokens](https://arxiv.org/abs/2404.03413) | [code](https://github.com/Vision-CAIR/MiniGPT4-video) | BSD 3-Clause License|
 | Gemini 1.5 Pro | [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](https://arxiv.org/pdf/2403.05530) | [code](https://github.com/google-gemini/cookbook/blob/main/quickstarts/Video.ipynb) | Apache License 2.0|
 | GPT-4o | [GPT-4o](https://openai.com/index/hello-gpt-4o/) | [code](https://github.com/openai/openai-cookbook/blob/main/examples/gpt4o/introduction_to_gpt4o.ipynb) | MIT License |
 | NExT-GPT | [NExT-GPT: Any-to-Any Multimodal LLM](https://arxiv.org/abs/2309.05519) | [code](https://github.com/NExT-GPT/NExT-GPT) | BSD 3-Clause License |
