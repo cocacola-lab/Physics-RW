@@ -11,17 +11,23 @@ Physics-RW benchmark is a physical reasoning dataset constructed from real-world
 -- Mechanics (T1)
     -- classification
         -- video/ # The folder for storing videos used for classification tasks.
-        -- classification_en.json # The JSON files for the English version of the instructions.
-        -- classification_zh.json # The JSON files for the Chinese version of the instructions.
+        -- classification_en.json # The JSON file contains idx, video_path, the English version of the instruction, and prediction.
+                                  # The value of prediction is empty, intended to store the model's output.
+        -- classification_zh.json # Similar to the above file, but the instructions are in Chinese.
+
     -- video_generation
         -- video_gen/
             -- seen_video/ # The folder for storing videos input to the model.
             -- unseen_video/ # The folder for storing reference videos, i.e., subsequent videos.
-        -- video_gen_en.json
-        -- video_gen_zh.json
+        -- video_gen_en.json # The JSON file contains idx, video_path, label_path (i.e., the path of subsequent video),
+                             # the English version of the instruction, and num_predicted_frame.
+        -- video_gen_zh.json ## Similar to the above file, but the instructions are in Chinese.
 -- Thermodynamics (T2)
+    ...
 -- Electromagnetism (T3)
+    ...
 -- Optics (T4)
+    ...
 ```
 ## Downloading the Physics-RW dataset
 Our data is stored in Physics-RW. Currently, only part of the data has been uploaded. Once the review process is complete, we will update all the data. 
