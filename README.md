@@ -57,7 +57,7 @@ We primarily evaluate existing methods based on accuracy (ACC), F1 score, and Fr
 We have evaluated the representative models, and the code is available at the following link:
 | Model Name | Paper or Project | Code Link | License |
 | ---------- | ------------ | ---------- | ----------|
-| LLaMA-Adapter | [LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention](https://arxiv.org/pdf/2303.16199) | [code](https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/imagebind_LLM) |GNU GENERAL PUBLIC LICENSE|
+| LLaMA-Adapter | [LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention](https://arxiv.org/pdf/2303.16199) | [code](https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/imagebind_LLM) |GPL-3.0 license|
 | Large World Model | [World Model on Million-Length Video and Language with Blockwise RingAttention](https://arxiv.org/abs/2402.08268)| [code](https://github.com/LargeWorldModel/LWM) |Apache License 2.0|
 | VideoChat | [VideoChat : Chat-Centric Video Understanding](https://arxiv.org/abs/2305.06355) | [code](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat) |MIT License|
 | VideoChat2 | [MVBench: A Comprehensive Multi-modal Video Understanding Benchmark](https://arxiv.org/abs/2311.17005)| [code](https://github.com/OpenGVLab/Ask-Anything/tree/main/video_chat2) |MIT License|
