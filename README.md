@@ -4,7 +4,14 @@
 Physics-RW benchmark is a physical reasoning dataset constructed from real-world videos. Encompassing a broad spectrum of real-world phenomena—mechanics, thermodynamics, electromagnetism, and optics—Physics-RW offers a comprehensive evaluation platform.
 
 -----
-## The dataset is organized as follows.
+## 0. Contents
+- [0. Contents](#0-contents)
+- [1. The Organized Structure of Dataset](#1-the-organized-structure-of-dataset)
+- [2. Download Dataset](#2-download-dataset)
+- [3. Benchmark Evaluate](#3-benchmark-evaluate)
+
+## 1. The Organized Structure of Dataset <a id="1-the-organized-structure-of-dataset"></a>
+The dataset is organized as follows.
 ```bash
 # The data structure in the four folders, i.e., T1-T4, is the same. T1, T2, T3, and T4 represent tasks in mechanics, thermodynamics,
 # electromagnetism, and optics, respectively.
@@ -29,18 +36,21 @@ Physics-RW benchmark is a physical reasoning dataset constructed from real-world
 -- Optics (T4)
     ...
 ```
-## Downloading the Physics-RW dataset
+## 2. Downloading the Physics-RW dataset <a id="2-download-dataset"></a>
 Our data is stored in Physics-RW. Currently, only part of the data has been uploaded. Once the review process is complete, we will update all the data. 
 **Dataset URL**: [https://www.modelscope.cn/datasets/pengyz/Physics-RW]
 
 There are two methods for downloading:
 
-1. Download via the ModelScope library.
+2.1. Download via the ModelScope library.
 ```bash
 from modelscope.msdatasets import MsDataset
 ds =  MsDataset.load('pengyz/Physics-RW')
 ```
-2.  Download via GiT.
+2.2. Download via GiT.
 ```
 git clone https://www.modelscope.cn/datasets/pengyz/Physics-RW.git
 ```
+## 3. Benchmark Evaluate <a id="benchmark-evaluate"></a>
+We primarily evaluate existing methods based on accuracy (ACC), F1 score, and Fréchet Video Distance (FVD) metrics. Considering the large size of content files in video generation tasks, we provide subsequent videos for evaluation. However, for classification task types, we do not provide ground truth. Users are required to store the model-generated content in the "prediction" field of JSON files and then submit the results following the dataset structure (excluding video files). We will conduct evaluations promptly and return the assessment results. In the future, we plan to establish an evaluation website to showcase both evaluated model results and the results provided by users.
+
