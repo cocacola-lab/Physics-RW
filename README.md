@@ -22,7 +22,7 @@ The dataset is organized as follows.
 # electromagnetism, and optics, respectively.
 -- Mechanics (T1)
     -- classification
-        -- video/ # The folder for storing videos used for classification tasks.
+            -- video/ # The folder for storing videos used for classification tasks.
         -- classification_en.json # The JSON file contains idx, video_path, the English version of the instruction, and prediction.
                                   # The value of prediction is empty, intended to store the model's output.
         -- classification_zh.json # Similar to the above file, but the instructions are in Chinese.
@@ -33,7 +33,7 @@ The dataset is organized as follows.
             -- unseen_video/ # The folder for storing reference videos, i.e., subsequent videos.
         -- video_gen_en.json # The JSON file contains idx, video_path, label_path (i.e., the path of subsequent video),
                              # the English version of the instruction, and num_predicted_frame.
-        -- video_gen_zh.json ## Similar to the above file, but the instructions are in Chinese.
+        -- video_gen_zh.json # Similar to the above file, but the instructions are in Chinese.
 -- Thermodynamics (T2)
     ...
 -- Electromagnetism (T3)
