@@ -1,6 +1,9 @@
 <div align="center">
     <h2> Bridging the Reality Gap: A Benchmark for Physical Reasoning in General World Models with Various Physical Phenomena beyond Mechanics </h2>
 </div>
+
+![illustration-benchmark](./examples/data_overview.png)
+
 Physics-RW is designed for vision-language physical reasoning tasks, which is constructed from real-world videos. Encompassing a broad spectrum of real-world phenomena—mechanics, thermodynamics, electromagnetism, and optics—Physics-RW offers a comprehensive evaluation platform.
 
 -----
