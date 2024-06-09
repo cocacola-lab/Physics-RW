@@ -19,13 +19,12 @@ Physics-RW is designed for vision-language physical reasoning tasks, which is co
 ## 1. The Organized Structure of Dataset <a id="1-the-organized-structure-of-dataset"></a>
 The dataset is organized as follows.
 ```bash
-# The data structure in the four folders, i.e., T1-T4, is the same. T1, T2, T3, and T4 represent tasks in mechanics, thermodynamics,
-# electromagnetism, and optics, respectively.
+# The data structure in the four folders, i.e., mechanics, thermodynamics, electromagnetism, and optics. They correspond to T1, T2, T3, and T4 respectively.
 -- Mechanics (T1)
     -- classification
             -- video/ # The folder for storing videos used for classification tasks.
         -- classification_en.json # The JSON file contains idx, video_path, the English version of the instruction, and prediction.
-                                  # The value of prediction is empty, intended to store the model's output.
+                                  # The prediction value is empty, intended to store the model's output.
         -- classification_zh.json # Similar to the above file, but the instructions are in Chinese.
 
     -- video_generation
@@ -44,19 +43,8 @@ The dataset is organized as follows.
 ```
 ## 2. Downloading the Physics-RW dataset <a id="2-download-dataset"></a>
 Our data is stored in [Hugging Face](https://huggingface.co/datasets/zhaopengyu/Physics-RW) and [ModelScope](https://www.modelscope.cn/datasets/pengyz/Physics-RW). Currently, only part of the data has been uploaded. Once the review process is complete, we will update all the data. 
-<div style="display:none"> 
-There are two methods for downloading:
 
-2.1. Download via the ModelScope library.
-```bash
-from modelscope.msdatasets import MsDataset
-ds =  MsDataset.load('pengyz/Physics-RW')
-```
-2.2. Download via GiT.
-```
-git clone https://www.modelscope.cn/datasets/pengyz/Physics-RW.git
-```
-</div>
+
 ## 3. Benchmark Evaluation <a id="3-benchmark-evaluate"></a>
 We primarily evaluate existing methods based on accuracy (ACC), F1 score, and Fréchet Video Distance (FVD) metrics. Considering the large size of content files in video generation tasks, we provide subsequent videos for evaluation. However, for classification task types, we do not provide ground truth. Users are required to store the model-generated content in the "prediction" field of JSON files and then submit the results following the dataset structure (excluding video files). We will conduct evaluations promptly and return the assessment results. In the future, we plan to establish an evaluation website to showcase both evaluated model results and the results provided by users.
 ## 4. Baseline Models <a id="4-baseline"></a>
@@ -76,6 +64,10 @@ We have evaluated the representative models, and the code is available at the fo
 | NExT-GPT | [NExT-GPT: Any-to-Any Multimodal LLM](https://arxiv.org/abs/2309.05519) | [code](https://github.com/NExT-GPT/NExT-GPT) | BSD 3-Clause License |
 | Open-Sora | -------------- | [code](https://github.com/hpcaitech/Open-Sora) | Apache License 2.0 |
 ## 5. Inference <a id="5-inference"></a>
+Here is an example of inferencing using Gemini Pro 1.5:
+```bash
+python gemini_inference.py
+```
 
 ## 6. Contact Us <a id="6-contact-us"></a>
 If you have any questions, please feel free to contact us via email at pengyuzhao@bjtu.edu.cn or zhaopengyuh@163.com. (Note: For classification task submissions, please send an email to the above addresses for now. We will set up a website for submissions in the future.)
