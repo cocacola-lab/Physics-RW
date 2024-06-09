@@ -7,8 +7,8 @@ import os
 res_list = []
 
 genai.configure(api_key='API_Key')
-json_path = 'Electromagnetism/classification/classification_en.json'
-video_prefix = 'Electromagnetism/classification/'
+json_path = 'Mechanics/classification/classification_en.json'
+video_prefix = 'Mechanics/classification/'
 with open(json_path) as f:
    data = json.load(f)
 
