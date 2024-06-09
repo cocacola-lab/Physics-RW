@@ -13,7 +13,8 @@ Physics-RW is designed for vision-language physical reasoning tasks, which is co
 - [2. Download Dataset](#2-download-dataset)
 - [3. Benchmark Evaluation](#3-benchmark-evaluate)
 - [4. Baseline Models](#4-baseline)
-- [5. Contact Us](#5-contact-us)
+- [5. Inference](#5-inference)
+- [6. Contact Us](#6-contact-us)
 
 ## 1. The Organized Structure of Dataset <a id="1-the-organized-structure-of-dataset"></a>
 The dataset is organized as follows.
@@ -42,9 +43,8 @@ The dataset is organized as follows.
     ...
 ```
 ## 2. Downloading the Physics-RW dataset <a id="2-download-dataset"></a>
-Our data is stored in Physics-RW. Currently, only part of the data has been uploaded. Once the review process is complete, we will update all the data. 
-**Dataset URL**: [https://www.modelscope.cn/datasets/pengyz/Physics-RW]
-
+Our data is stored in [Hugging Face](https://huggingface.co/datasets/zhaopengyu/Physics-RW) and [ModelScope](https://www.modelscope.cn/datasets/pengyz/Physics-RW). Currently, only part of the data has been uploaded. Once the review process is complete, we will update all the data. 
+<div style="display:none"> 
 There are two methods for downloading:
 
 2.1. Download via the ModelScope library.
@@ -56,6 +56,7 @@ ds =  MsDataset.load('pengyz/Physics-RW')
 ```
 git clone https://www.modelscope.cn/datasets/pengyz/Physics-RW.git
 ```
+</div>
 ## 3. Benchmark Evaluation <a id="3-benchmark-evaluate"></a>
 We primarily evaluate existing methods based on accuracy (ACC), F1 score, and Fréchet Video Distance (FVD) metrics. Considering the large size of content files in video generation tasks, we provide subsequent videos for evaluation. However, for classification task types, we do not provide ground truth. Users are required to store the model-generated content in the "prediction" field of JSON files and then submit the results following the dataset structure (excluding video files). We will conduct evaluations promptly and return the assessment results. In the future, we plan to establish an evaluation website to showcase both evaluated model results and the results provided by users.
 ## 4. Baseline Models <a id="4-baseline"></a>
@@ -74,8 +75,8 @@ We have evaluated the representative models, and the code is available at the fo
 | GPT-4o | [GPT-4o](https://openai.com/index/hello-gpt-4o/) | [code](https://github.com/openai/openai-cookbook/blob/main/examples/gpt4o/introduction_to_gpt4o.ipynb) | MIT License |
 | NExT-GPT | [NExT-GPT: Any-to-Any Multimodal LLM](https://arxiv.org/abs/2309.05519) | [code](https://github.com/NExT-GPT/NExT-GPT) | BSD 3-Clause License |
 | Open-Sora | -------------- | [code](https://github.com/hpcaitech/Open-Sora) | Apache License 2.0 |
+## 5. Inference <a id="5-inference"></a>
 
-
-## 5. Contact Us <a id="5-contact-us"></a>
+## 6. Contact Us <a id="6-contact-us"></a>
 If you have any questions, please feel free to contact us via email at pengyuzhao@bjtu.edu.cn or zhaopengyuh@163.com. (Note: For classification task submissions, please send an email to the above addresses for now. We will set up a website for submissions in the future.)
 
