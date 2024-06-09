@@ -64,7 +64,7 @@ We have evaluated the representative models, and the code is available at the fo
 | NExT-GPT | [NExT-GPT: Any-to-Any Multimodal LLM](https://arxiv.org/abs/2309.05519) | [code](https://github.com/NExT-GPT/NExT-GPT) | BSD 3-Clause License |
 | Open-Sora | -------------- | [code](https://github.com/hpcaitech/Open-Sora) | Apache License 2.0 |
 ## 5. Inference <a id="5-inference"></a>
-Here is an example of inferencing using Gemini Pro 1.5:
+Here is an example of inferencing using Gemini 1.5 Pro:
 ```bash
 python gemini_inference.py
 ```
