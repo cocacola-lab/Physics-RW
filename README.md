@@ -23,7 +23,7 @@ The dataset is organized as follows.
 -- Mechanics (T1)
     -- classification
             -- video/ # The folder for storing videos used for classification tasks.
-        -- classification_en.json # The JSON file contains idx, video_path, the English version of the instruction, and prediction.
+        -- classification_en.json # The JSON file contains idx, video_path, the English version of the instruction, ground-truth label and prediction.
                                   # The prediction value is empty, intended to store the model's output.
         -- classification_zh.json # Similar to the above file, but the instructions are in Chinese.
 
