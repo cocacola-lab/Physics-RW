@@ -46,7 +46,7 @@ Our data is stored in [Hugging Face](https://huggingface.co/datasets/zhaopengyu/
 
 
 ## 3. Benchmark Evaluation <a id="3-benchmark-evaluate"></a>
-We primarily evaluate existing methods based on accuracy (ACC), F1 score, and Fréchet Video Distance (FVD) metrics. Considering the large size of content files in video generation tasks, we provide subsequent videos for evaluation. However, for classification task types, we do not provide ground truth. Users are required to store the model-generated content in the "prediction" field of JSON files and then submit the results following the dataset structure (excluding video files). We will conduct evaluations promptly and return the assessment results. In the future, we plan to establish an evaluation website to showcase both evaluated model results and the results provided by users.
+We primarily evaluate existing methods based on accuracy (ACC), F1 score (macro), and Fréchet Video Distance (FVD) metrics. Considering the large size of content files in video generation tasks, we provide subsequent videos for evaluation. However, for classification task types, we do not provide ground truth. Users are required to store the model-generated content in the "prediction" field of JSON files and then submit the results following the dataset structure (excluding video files). We will conduct evaluations promptly and return the assessment results. In the future, we plan to establish an evaluation website to showcase both evaluated model results and the results provided by users.
 ## 4. Baseline Models <a id="4-baseline"></a>
 We have evaluated the representative models, and the code is available at the following link:
 | Model Name | Paper or Project | Code Link | License |
