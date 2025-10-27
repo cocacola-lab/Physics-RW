@@ -46,7 +46,7 @@ Our data is stored in [Hugging Face](https://huggingface.co/datasets/zhaopengyu/
 
 
 ## 3. Benchmark Evaluation <a id="3-benchmark-evaluate"></a>
-We primarily evaluate existing methods based on accuracy (ACC), F1 score (macro), and Fréchet Video Distance (FVD) metrics. For detailed experimental results, please refer to the paper. If you need the baseline prediction outputs, feel free to contact us.
+We primarily evaluate existing methods based on accuracy (ACC), F1 score (macro), and Fréchet Video Distance (FVD) metrics. For detailed experimental results, please refer to the paper. 
 ## 4. Baseline Models <a id="4-baseline"></a>
 We have evaluated the representative models, and the code is available at the following link:
 | Model Name | Paper or Project | Code Link | License |
