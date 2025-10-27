@@ -70,5 +70,5 @@ python gemini_inference.py
 ```
 
 ## 6. Contact Us <a id="6-contact-us"></a>
-If you have any questions, please feel free to contact us via email at pengyuzhao@bjtu.edu.cn or zhaopengyuh@163.com. (Note: For classification task submissions, please send an email to the above addresses for now. We will set up a website for submissions in the future.)
+If you have any questions, please feel free to contact us via email at pengyuzhao@bjtu.edu.cn or zhaopengyuh@163.com. 
 
